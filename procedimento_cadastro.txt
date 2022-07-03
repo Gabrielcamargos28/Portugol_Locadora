@@ -1,0 +1,39 @@
+procedimento cadastro()
+         repita
+            limpatela()
+            repita
+               escreval("Digite o nome do filme:")
+               leia(vetNome[i])
+               escreval()
+            ate (vetNome[i] <> "") e (vetNome[i] <> " ")
+            repita
+               escreval("Digite o ano de lançamento do filme:")
+               leia(vetAno[i])
+               escreval()
+            ate (vetAno[i] <> "") e (vetAno[i] <> " ")
+            repita
+               escreval("Escreva a quantidade de vezes que esse filme foi alugado:")
+               leia(vetQtFilmes[i])
+               escreval()
+
+            ate (vetQtFilmes[i] <> "") e (vetQtFilmes[i] <> " ")
+            repita
+               escreval("O filme está alugado?")
+               escreval("1 - sim")
+               escreval("2 - não")
+               escreval()
+               leia(escolhaSituacao)
+            ate (escolhaSituacao = 1) ou (escolhaSituacao = 2)
+            escolha(escolhaSituacao)
+            caso 1
+               vetSituacao[i] <- "Sim"
+            caso 2
+               vetSituacao[i] <- "Não"
+            fimescolha
+            escreval("Deseja cadastrar outro filme?")
+            escreval("1 - sim")
+            escreval("2 - não")
+            leia(resp)
+            i<-i+1
+         ate (resp = 2)
+fimprocedimento

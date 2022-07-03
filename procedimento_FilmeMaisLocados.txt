@@ -1,0 +1,22 @@
+procedimento FilmeMaisLocado()
+         limpatela()
+
+         maisLocado <- vetQtFilmes[0]
+         para i de 0 ate 9 faca
+            se vetQtFilmes[i] > maisLocado entao
+               maisLocado <- vetQtFilmes[i]
+            fimse
+         fimpara
+
+         para i de 0 ate 9 faca
+            se vetQtFilmes[i] = maisLocado entao
+               escreval("Filme mais alugado:")
+               escreval("Nome: ",vetNome[i])
+               escreval("Ano de lançamento: ",vetAno[i])
+               escreval("Quantidade de vezes que o filme foi alugado: ",vetQtFilmes[i])
+               escreval("Alugado?: ",vetSituacao[i])
+
+            fimse
+         fimpara
+fimprocedimento
+

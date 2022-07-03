@@ -1,0 +1,13 @@
+procedimento FilmesNaoLocados()
+limpatela()
+
+         escreval("Lista de filmes não locados:")
+
+         para i de 0 ate 9 faca
+            se vetSituacao[i] = "Não" entao
+               escreval(i,"- ",vetNome[i])
+            fimse
+         fimpara
+         escreval("Digite o numero do filme que deseja alugar:")
+         leia(alSituacao)
+fimprocedimento

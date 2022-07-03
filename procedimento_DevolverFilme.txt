@@ -1,0 +1,19 @@
+procedimento ListaDeFilmesLocados()
+limpatela()
+
+         escreva("Lista de filmes locados:")
+
+         para i de 0 ate 9 faca
+            se vetSituacao[i] = "Sim" entao
+               escreval(i,"- ",vetNome[i])
+            fimse
+         fimpara
+         escreva("Digite o número do filme que deseja devolver:")
+         leia(devSituacao)
+
+         para i de 0 ate 9 faca
+            se devSituacao = i entao
+               vetSituacao[i] <- "Não"
+            fimse
+         fimpara
+fimalgoritmo
